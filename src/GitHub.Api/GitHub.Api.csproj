@@ -51,6 +51,7 @@
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <CodeAnalysisRuleSet>..\..\common\codeanalysis-debug.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup>
     <BuildConfig Condition=" '$(BuildConfig)' == '' ">Debug</BuildConfig>
@@ -168,7 +169,6 @@
     <Compile Include="OutputProcessors\StatusOutputProcessor.cs" />
     <Compile Include="Git\GitConfig.cs" />
     <Compile Include="OutputProcessors\LineProcessor.cs" />
-    <Compile Include="IO\FileSystem.cs" />
     <Compile Include="Git\GitRemote.cs" />
     <Compile Include="OutputProcessors\IProcessManager.cs" />
     <Compile Include="IO\NiceIO.cs" />
@@ -181,7 +181,6 @@
       <DependentUpon>Localization.resx</DependentUpon>
     </Compile>
     <Compile Include="Platform\ProcessEnvironment.cs" />
-    <Compile Include="IO\IFileSystem.cs" />
     <Compile Include="Platform\IProcessEnvironment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Git\Repository.cs" />
